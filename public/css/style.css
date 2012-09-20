@@ -1,0 +1,23 @@
+.wrapper {
+	background-color: white;
+	width:960px;
+	margin:auto;
+}
+
+.header {
+	height:50px;
+	background-color: #040132;
+	padding: 10px;
+	color:white;
+}
+
+#main-area {
+	width:960px;
+	margin: auto;
+}
+
+#search-area, #result-area {
+	margin:5px;
+	padding: 5px;
+	background-color: #f5f5f5;	
+}
