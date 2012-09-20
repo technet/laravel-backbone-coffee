@@ -69,7 +69,7 @@ class CategoryResultView extends app.BaseView
 	itemDelete: (view)->
 		model = view.model
 		if model.isNew()				# Just remove the view no need to send server call
-			view.remove()				# So don't do fade out animation, make it quick
+			view.remove()				
 		else
 			model.destroy
 				wait:true
