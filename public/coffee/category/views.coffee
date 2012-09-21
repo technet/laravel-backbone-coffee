@@ -87,7 +87,12 @@ class CategoryResultView extends app.BaseView
 		
 	cancelEdit: (view)->
 		model = view.model
-		view.remove() if model.isNew() 
+		if model.isNew() 
+			view.remove()
+		else
+			rowView = new CategoryRowDisplayView model:model
+			$editViewEl = view.$el
+			$editViewEl.replaceWith rowView.render().el
 		
 		
 # This is a view to represent combined area of search panel and search results
